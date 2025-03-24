@@ -1,0 +1,1413 @@
+{
+    "ActiveTeam": 2,
+    "Field": [
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                0,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                1,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                0
+            ],
+            "TypeCell": 2
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                1
+            ],
+            "TypeCell": 2
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                2
+            ],
+            "TypeCell": 2
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                2,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                7
+            ],
+            "TypeCell": 3
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                8
+            ],
+            "TypeCell": 3
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                3,
+                9
+            ],
+            "TypeCell": 3
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                4
+            ],
+            "TypeCell": 4
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                4,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                5
+            ],
+            "TypeCell": 1
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                6
+            ],
+            "TypeCell": 1
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                7
+            ],
+            "TypeCell": 1
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                5,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                6
+            ],
+            "TypeCell": 4
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                6,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [
+                    {
+                        "baseDamage": 10,
+                        "bulletType": 1,
+                        "cartridgeSize": 6,
+                        "itemHeavy": 2,
+                        "itemName": "Telyk3000",
+                        "itemType": 0,
+                        "shootsLeft": 6,
+                        "shootsPerRound": 1,
+                        "timeReload": 1,
+                        "timeShoot": 3
+                    }
+                ],
+                "ListHeavy": 2,
+                "amountItem": 1
+            },
+            "Position": [
+                7,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                7,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                8,
+                9
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                0
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                1
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                2
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                3
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                4
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                5
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                6
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                7
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                8
+            ],
+            "TypeCell": 0
+        },
+        {
+            "ListCellItem": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "Position": [
+                9,
+                9
+            ],
+            "TypeCell": 0
+        }
+    ],
+    "Size": [
+        10,
+        10
+    ],
+    "SizeList": 5,
+    "listEntity": [
+        {
+            "HP": 120,
+            "accuracy": 100,
+            "amountItem": 3,
+            "curretWeapon": {
+                "baseDamage": 5,
+                "bulletType": 2,
+                "cartridgeSize": 30,
+                "itemHeavy": 5,
+                "itemName": "Dudkina3000",
+                "itemType": 0,
+                "shootsLeft": 30,
+                "shootsPerRound": 5,
+                "timeReload": 2,
+                "timeShoot": 5
+            },
+            "inventory": {
+                "Items": [
+                    {
+                        "amountBullet": 50,
+                        "bulletType": 2,
+                        "caseSize": 50,
+                        "itemHeavy": 3,
+                        "itemName": "Patron",
+                        "itemType": 2
+                    },
+                    {
+                        "healthRecover": 100,
+                        "itemHeavy": 4,
+                        "itemName": "aptech",
+                        "itemType": 1,
+                        "timePoint": 2
+                    },
+                    {
+                        "baseDamage": 10,
+                        "bulletType": 1,
+                        "cartridgeSize": 6,
+                        "itemHeavy": 2,
+                        "itemName": "Telyk3000",
+                        "itemType": 0,
+                        "shootsLeft": 6,
+                        "shootsPerRound": 1,
+                        "timeReload": 1,
+                        "timeShoot": 3
+                    }
+                ],
+                "ListHeavy": 9,
+                "amountItem": 3
+            },
+            "maxHP": 150,
+            "maxTimePoint": 50,
+            "minCombatDamage": 4,
+            "name": "PensilCaseovich",
+            "position": [
+                3,
+                4
+            ],
+            "speed": 1,
+            "strength": 50,
+            "team": 0,
+            "timePoint": 50,
+            "typeEntity": "Oper",
+            "viewRadius": 10
+        },
+        {
+            "HP": 50,
+            "accuracy": 50,
+            "curretWeapon": {
+                "baseDamage": 5,
+                "bulletType": 2,
+                "cartridgeSize": 30,
+                "itemHeavy": 5,
+                "itemName": "Dudkina3001",
+                "itemType": 0,
+                "shootsLeft": 24,
+                "shootsPerRound": 3,
+                "timeReload": 2,
+                "timeShoot": 5
+            },
+            "listStoragePoint": [
+                [
+                    4,
+                    4
+                ],
+                [
+                    6,
+                    6
+                ]
+            ],
+            "maxHP": 50,
+            "maxTimePoint": 12,
+            "name": "Dofigaumi",
+            "position": [
+                0,
+                6
+            ],
+            "sizeListSP": 2,
+            "speed": 1,
+            "team": 1,
+            "timePoint": 12,
+            "typeEntity": "Smart",
+            "viewRadius": 4
+        },
+        {
+            "HP": 200,
+            "accuracy": 50,
+            "maxHP": 200,
+            "maxTimePoint": 10,
+            "minCombatDamage": 4,
+            "name": "Tupich",
+            "position": [
+                2,
+                5
+            ],
+            "speed": 4,
+            "team": 1,
+            "timePoint": 10,
+            "typeEntity": "Wild",
+            "viewRadius": 5
+        },
+        {
+            "HP": 50,
+            "amountItem": 0,
+            "inventory": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "listStoragePoint": [
+                [
+                    4,
+                    4
+                ],
+                [
+                    6,
+                    6
+                ]
+            ],
+            "maxHP": 50,
+            "maxTimePoint": 15,
+            "name": "Shesterka",
+            "position": [
+                5,
+                0
+            ],
+            "sizeListSP": 2,
+            "speed": 7,
+            "team": 1,
+            "timePoint": 15,
+            "typeEntity": "Forager",
+            "viewRadius": 10
+        },
+        {
+            "HP": 150,
+            "accuracy": 100,
+            "amountItem": 0,
+            "curretWeapon": {
+                "baseDamage": 5,
+                "bulletType": 2,
+                "cartridgeSize": 30,
+                "itemHeavy": 5,
+                "itemName": "Dudkina3000",
+                "itemType": 0,
+                "shootsLeft": 30,
+                "shootsPerRound": 5,
+                "timeReload": 2,
+                "timeShoot": 5
+            },
+            "inventory": {
+                "Items": [],
+                "ListHeavy": 0,
+                "amountItem": 0
+            },
+            "maxHP": 150,
+            "maxTimePoint": 50,
+            "minCombatDamage": 4,
+            "name": "PensilCaseovich",
+            "position": [
+                9,
+                9
+            ],
+            "speed": 1,
+            "strength": 50,
+            "team": 0,
+            "timePoint": 50,
+            "typeEntity": "Oper",
+            "viewRadius": 10
+        }
+    ]
+}

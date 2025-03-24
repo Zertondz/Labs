@@ -1,0 +1,213 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libmy_library.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-Wall -Wextra -g  -fPIC -std=c++20 -O0 -g -std=gnu++20 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "my_library_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/shared"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/inventory/Item"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/inventory"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/level"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/level/cell"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/Vector"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/game_algorithm"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/entyties"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/entyties/Entity"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/Factories"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/grafic"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/zerton/Labs/OOP/3/../3/logic_Dire"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"id" : "my_library::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lsfml-graphics",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lsfml-window",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lsfml-system",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "my_library",
+	"nameOnDisk" : "libmy_library.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "shared/Smart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "shared/Oper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "shared/Wild.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "shared/Forager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "shared/Entity.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

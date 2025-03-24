@@ -1,0 +1,10 @@
+# Doxyfile 1.8.20
+
+PROJECT_NAME           = Lab2
+PROJECT_BRIEF          = "Project for managing details"
+INPUT = src/Detail.h src/AssemblyInstruction.h
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+EXTRACT_ALL            = YES
+RECURSIVE              = NO

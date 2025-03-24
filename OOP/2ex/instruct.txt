@@ -1,0 +1,16 @@
+plane
+four*four 0
+two*two 0
+wall 1 1 1 1 1
+cab 1 0 0 2 2
+wing 1 0 1 1
+fuselage 1 2 2 0 0
+plane 2 5 4 4 3
+test
+four*four 0
+two*two 0
+wall 1 1 1 1 1
+cab 1 0 0 2 2
+wing 1 0 1 1
+fuselage 1 2 2 0 0
+plane 2 5 4 4 3

@@ -1,0 +1,20 @@
+<rec><word>apple</word><meaning>fruit</meaning><emphisis>1</emphasis></record>
+<test.txt><wod>applr</word><meaning>ddf</meaning><emphisis>1</emphasis></test.txt>
+<ert><word>errrr</word><meaning>dvvfrf</meaning><emphisis>2</emphasis></ert>
+<red><word>rrt</word><meaning>qwqw</meaning><emphisis>1</emphasis></red>
+<red><word>rffdgfgfgfgfffffdrdrhdrhdhtdhdhtrdfgh</word><meaning>eedf</meaning><emphisis>1</emphasis></red>
+<rec><word>dfdf</word><meaning>t</meaning><emphisis>2</emphasis></rec>
+<rec2><word>res</word><meaning>t</meaning><emphisis>1</emphasis></rec2>2
+<rec1><word>apple</word><meaning>t-shirt</meaning><emphisis>2</emphasis></rec1>
+<tonh><word>toy</word><meaning>pencil case</meaning><emphisis>1</emphasis></tonh>
+<you><word>you</word><meaning>ert</meaning><emphisis>1</emphasis></you>
+<you><word>jam</word><meaning>tir</meaning><emphisis>1</emphasis></you>
+<ertgd><word>sdd</word><meaning>s</meaning><emphisis>1</emphasis></ertgd>
+<red><word>afd</word><meaning>evd</meaning><emphisis>1</emphasis></red>
+<ercd><word>fdfdf</word><meaning>efdff</meaning><emphisis>1</emphasis></ercd>
+<rec><word>dfd</word><meaning>hghg</meaning><emphisis>1</emphasis></rec>
+<test><word>sdsds</word><meaning>rere</meaning><emphisis>3</emphasis></test>
+<de><word>dsd</word><meaning>vfv</meaning><emphisis>1</emphasis></de>
+<ter><word>sdsd</word><meaning>cvc</meaning><emphisis>1</emphasis></ter>
+<record><word>apple</word><meaning>fruit</meaning><emphisis>1</emphasis></record>
+<1><word>edf</word><meaning>2</meaning><emphisis>2</emphasis></1>

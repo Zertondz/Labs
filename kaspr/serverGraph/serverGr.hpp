@@ -12,7 +12,7 @@ public:
         int bytes_read;
         std::vector<char> buf(BUFF_SIZE);
         std::vector<char> res;
-        while(1){
+        while(true){
             sock = accept(server_socket, NULL, NULL);
             if(sock < 0){
                 perror("accept");

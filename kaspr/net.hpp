@@ -1,6 +1,8 @@
+#pragma once
 #include <iostream>
 #include <limits>
 #include <cstring>
+#include <vector>
 #ifdef _WIN32
     #include <ws2tcpip.h>
     #include <winsock2.h>
@@ -93,14 +95,14 @@ private:
         }
         return 0;
     }
+    const int BUFF_SIZE = 1024;
+    std::vector<char> buf = std::vector<char>(BUFF_SIZE);
+    std::vector<char> res;        
+    int sock;
+    int bytes_read;
 public:
     Server(int port_si = 5080) : port_s(port_si){
-        setup();
-        #ifdef _WIN32
-            #include <ws2tcpip.h>
-            #include <winsock2.h>
-            #include <windows.h>
-        #else
+        //setup();
         struct sockaddr_in addr;
         server_socket = socket(AF_INET, SOCK_STREAM, 0);
         if(server_socket < 0){
@@ -117,7 +119,6 @@ public:
             throw std::runtime_error("!!!!");
         }
         listen(server_socket, size_deque_client);
-        #endif
     }
     ~Server(){
         close(server_socket);
@@ -125,7 +126,7 @@ public:
 };
 class Client{
 protected:
-    std::string servername = "localhost";
+    std::string servername = "127.0.0.1";
     int port_c;
     int client_socket;
 private:
@@ -196,8 +197,11 @@ private:
         return 0;
     }
 public:
+    void send_request(std::string mes){
+        send(client_socket, mes.c_str(), mes.size(), 0);
+    }
     Client(int port_ci = 8080) : port_c(port_ci){
-        setup();
+        //setup();
         client_socket = socket(AF_INET, SOCK_STREAM, 0);
         if (client_socket == -1){
             perror("socket() failed");
@@ -218,7 +222,7 @@ public:
         addr.sin_port = htons(port_c);
         addr.sin_addr = reinterpret_cast<struct sockaddr_in*>(res->ai_addr)->sin_addr;
         if(connect(client_socket, reinterpret_cast<struct sockaddr*>(&addr), sizeof(addr)) < 0){
-            perror("Connect");
+            perror("Connect client");
             freeaddrinfo(res);
             throw std::runtime_error("!!!");
         }

@@ -1,4 +1,0 @@
-/home/zerton/Labs/build/CMakeFiles/my_library.dir
-/home/zerton/Labs/build/CMakeFiles/res.dir
-/home/zerton/Labs/build/CMakeFiles/edit_cache.dir
-/home/zerton/Labs/build/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UNIQUE_NAME_FOR_HEADER
+#define UNIQUE_NAME_FOR_HEADER
 #include <iostream>
 #include <limits>
 #include <cstring>
@@ -15,7 +16,11 @@ class Server{
 protected:
     int port_s = 5080;
     int size_deque_client = 1;
+    #ifdef _WIN32
+    SOCKET server_socket;
+    #else
     int server_socket;
+    #endif
 private:
     int setup(){
         int num = -1;
@@ -103,32 +108,71 @@ private:
 public:
     Server(int port_si = 5080) : port_s(port_si){
         //setup();
+        #ifdef _WIN32
+        WSADATA wsaData;
+        if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0) {
+            throw std::runtime_error("WSAStartup failed");
+        }
+        #endif
         struct sockaddr_in addr;
         server_socket = socket(AF_INET, SOCK_STREAM, 0);
-        if(server_socket < 0){
+        #ifdef _WIN32
+        if (server_socket == INVALID_SOCKET) {
+            std::cerr << "socket failed: " << WSAGetLastError() << std::endl;
+            WSACleanup();
+            throw std::runtime_error("socket creation failed");
+        }
+        #else
+        if (server_socket < 0) {
             perror("socket");
             close(server_socket);
-            throw std::runtime_error("!!!!");
+            throw std::runtime_error("socket creation failed");
         }
+        #endif
         addr.sin_family = AF_INET;
         addr.sin_port = htons(port_s);
         addr.sin_addr.s_addr = htonl(INADDR_ANY);
         if(bind(server_socket, reinterpret_cast<struct sockaddr*>(&addr), sizeof(addr)) < 0){
+            #ifdef _WIN32
+            std::cerr << "bind failed: " << WSAGetLastError() << std::endl;
+            closesocket(server_socket);
+            WSACleanup();
+            #else
             perror("bind");
             close(server_socket);
-            throw std::runtime_error("!!!!");
+            #endif
+            throw std::runtime_error("bind failed");
         }
-        listen(server_socket, size_deque_client);
+        if (listen(server_socket, SOMAXCONN) < 0) {
+            #ifdef _WIN32
+            std::cerr << "listen failed: " << WSAGetLastError() << std::endl;
+            closesocket(server_socket);
+            WSACleanup();
+            #else
+            perror("listen");
+            close(server_socket);
+            #endif
+            throw std::runtime_error("listen failed");
+        }
     }
-    ~Server(){
+    ~Server() {
+        #ifdef _WIN32
+        closesocket(server_socket);
+        WSACleanup();
+        #else
         close(server_socket);
+        #endif
     }
 };
 class Client{
 protected:
     std::string servername = "127.0.0.1";
     int port_c;
+    #ifdef _WIN32
+    SOCKET client_socket;
+    #else
     int client_socket;
+    #endif
 private:
     int setup(){
         int num = -1;
@@ -202,32 +246,66 @@ public:
     }
     Client(int port_ci = 8080) : port_c(port_ci){
         //setup();
-        client_socket = socket(AF_INET, SOCK_STREAM, 0);
-        if (client_socket == -1){
-            perror("socket() failed");
-            throw std::runtime_error("!!!!");
+        #ifdef _WIN32
+        WSADATA wsaData;
+        if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0) {
+            throw std::runtime_error("WSAStartup failed");
         }
-        struct sockaddr_in addr;
-        struct addrinfo hints;
-        struct addrinfo *res;
+        #endif
+        client_socket = socket(AF_INET, SOCK_STREAM, 0);
+        #ifdef _WIN32
+        if (client_socket == INVALID_SOCKET) {
+            std::cerr << "socket failed: " << WSAGetLastError() << std::endl;
+            WSACleanup();
+            throw std::runtime_error("socket creation failed");
+        }
+        #else
+        if (client_socket == -1) {
+            perror("socket() failed");
+            throw std::runtime_error("socket creation failed");
+        }
+        #endif
+        struct addrinfo hints, *res;
         memset(&hints, 0, sizeof(hints));
         hints.ai_family = AF_INET;
         hints.ai_socktype = SOCK_STREAM;
+        struct sockaddr_in addr;
         if (getaddrinfo(servername.c_str(), NULL, &hints, &res) != 0) {
+            #ifdef _WIN32
+            std::cerr << "Host lookup failed: " << WSAGetLastError() << std::endl;
+            closesocket(client_socket);
+            WSACleanup();
+            #else
             perror("Host lookup failed");
-            throw std::runtime_error("!!!");
+            close(client_socket);
+            #endif
+            throw std::runtime_error("Host resolution failed");
         }
         memset(&addr, 0, sizeof(addr));
         addr.sin_family = AF_INET;
         addr.sin_port = htons(port_c);
         addr.sin_addr = reinterpret_cast<struct sockaddr_in*>(res->ai_addr)->sin_addr;
         if(connect(client_socket, reinterpret_cast<struct sockaddr*>(&addr), sizeof(addr)) < 0){
+            #ifdef _WIN32
+            std::cerr << "Connect failed: " << WSAGetLastError() << std::endl;
+            closesocket(client_socket);
+            WSACleanup();
+            #else
             perror("Connect client");
+            close(client_socket);
+            #endif
             freeaddrinfo(res);
-            throw std::runtime_error("!!!");
+            throw std::runtime_error("Connection failed");
         }
+        freeaddrinfo(res);
     }
     ~Client(){
+        #ifdef _WIN32
+        closesocket(client_socket);
+        WSACleanup();
+        #else
         close(client_socket);
+        #endif
     }
 };
+#endif

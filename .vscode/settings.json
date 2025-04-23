@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "/home/serez/Zer/kaspr",
+    "cmake.sourceDirectory": "C:/Users/serez/kaspr/kaspr",
     "bitoAI.codeCompletion.enableAutoCompletion": false,
     "files.associations": {
         "*.tcc": "cpp",

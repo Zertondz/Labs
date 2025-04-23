@@ -1,7 +1,18 @@
 #include <net.hpp>
-#include <unistd.h>
 #include <nlohmann/json.hpp>
-#include <poll.h>
+#ifdef _WIN32
+    #include <ws2tcpip.h>
+    #include <winsock2.h>
+    #include <windows.h>
+    #include <winsock2.h>
+    #include <mstcpip.h>
+    #include <ws2def.h>
+    #include <ws2ipdef.h>
+    #define _WIN32_WINNT 0x0600
+#else
+    #include <poll.h>
+    #include <unistd.h>
+#endif
 class Client_K : public Client{
 private:
     const int BUFF_SIZE = 1024;
@@ -47,15 +58,40 @@ public:
     }
     int start(){
         int timeout_ms = 5000;
+        std::string mes;
+        #ifdef _WIN32
+        WSADATA wsaData;
+        if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0) {
+            throw std::runtime_error("WSAStartup failed");
+        }
+        
+        WSAPOLLFD pfd = {};
+        pfd.fd = client_socket;
+        pfd.events = POLLOUT | POLLERR | POLLHUP;
+        #else
         struct pollfd pfd;
         pfd.fd = client_socket;
-        pfd.events = POLLOUT | POLLERR | POLLHUP;;
-        std::string mes;
-        //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        pfd.events = POLLOUT | POLLERR | POLLHUP;
+        #endif
         while(1){
+            #ifdef _WIN32
+            std::cout << "client_socket: " << client_socket << std::endl;
+            if (client_socket == INVALID_SOCKET) {
+                std::cerr << "Invalid client socket!" << std::endl;
+                return -1;
+            }
+            int ret = WSAPoll(&pfd, 1, timeout_ms);
+            #else
             int ret = poll(&pfd, 1, timeout_ms);
+            #endif
             if (ret == -1) {
+                #ifdef _WIN32
+                std::cerr << "WSAPoll error: " << WSAGetLastError() << std::endl;
+                WSACleanup();
+                #else
                 perror("Ошибка poll");
+                close(client_socket);
+                #endif
                 throw std::runtime_error("!!!");
             }
             else if (ret > 0) {
@@ -66,18 +102,17 @@ public:
                     throw std::runtime_error("Ошибка сокета (POLLERR)\n");
                 }
                 if (pfd.revents & POLLOUT) {
-                    std::cout<< "Enter line (enter stop to stop all servers or stop_s to stop main server): " ;
+                    std::cout << "Enter line (enter stop to stop all servers or stop_s to stop main server): ";
                     std::getline(std::cin, mes);
-                    if(std::cin.eof()){
+                    
+                    if(std::cin.eof()) {
                         break;
                     }
-                    if(mes == "stop"){
+                    
+                    if(mes == "stop" || mes == "stop_s") {
                         send(client_socket, mes.c_str(), mes.size(), 0);
                     }
-                    else if(mes == "stop_s"){
-                        send(client_socket, mes.c_str(), mes.size(), 0);
-                    }
-                    else{
+                    else {
                         std::string res = create_http_json(mes);
                         send(client_socket, res.c_str(), res.size(), 0);
                     }

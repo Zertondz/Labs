@@ -2,6 +2,7 @@
 #include <vector>
 #include <nlohmann/json.hpp>
 #include <unordered_set>
+#include <sstream>
 class Main_server : public Server, public Client{
 private:
     int BUFF_SIZE = 1024;
@@ -23,7 +24,12 @@ private:
         }
         return oss.str();
     }
-    int parser(std::vector<char> &res, int sock){
+    #ifdef _WIN32
+    int parser(std::vector<char> &res, SOCKET sock)
+    #else
+    int parser(std::vector<char> &res, int sock)
+    #endif
+    {
         try {
             std::string res_str(res.data());
             nlohmann::json request = nlohmann::json::parse(res_str.c_str() + res_str.find("\r\n\r\n") + 4);
@@ -67,19 +73,30 @@ public:
     Main_server(): Server(8080), Client(5080){}
     int start(){
         int bytes_read;
+        #ifdef _WIN32
+        SOCKET sock;
+        #else
         int sock;
+        #endif
         std::vector<char> buf(BUFF_SIZE);
         std::vector<char> res;
         while(1)
         {
             sock = accept(server_socket, NULL, NULL);
-            if(sock < 0)
-            {
+            #ifdef _WIN32
+            if (sock == INVALID_SOCKET) {
+                std::cerr << "accept failed: " << WSAGetLastError() << std::endl;
+                closesocket(sock);
+                throw std::runtime_error("!!!");
+            }
+            #else
+            if (sock < 0) {
                 perror("accept");
                 close(sock);
-                throw std::runtime_error("!!!!");
+                throw std::runtime_error("!!!");
             }
-            while(1)
+            #endif
+            while(true)
             {
                 bytes_read = recv(sock, buf.data(), BUFF_SIZE, 0);
                 if(bytes_read <= 0) break;
@@ -103,7 +120,11 @@ public:
                     res.insert(res.end(), buf.begin(), buf.begin() + bytes_read);
                 }
             }
+            #ifdef _WIN32
+            closesocket(sock);
+            #else
             close(sock);
+            #endif
         }
         return 0;
     }
